@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/sabre_ff"
+    tools:context="com.example.android.sabrecounter.MainActivity">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sabre_ff" />
+
+    <TextView
+        android:id="@+id/PlayerAName"
+        style="@style/Text1Theme"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFC107"
+        android:text="Player A"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/PlayerBName"
+        style="@style/Text1Theme"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Player B" />
+
+    <TextView
+        android:id="@+id/PlayerAScore"
+        style="@style/Text2Theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFC107" />
+
+
+    <TextView
+        android:id="@+id/PlayerBScore"
+        style="@style/Text2Theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textColor="#E65100" />
+
+    <TextView
+        android:id="@+id/GameOver"
+        style="@style/Text1Theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="0dp"
+        android:text=""
+        android:textSize="65sp" />
+
+    <Button
+        android:id="@+id/restart"
+        style="@style/Button1Theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetScore"
+        android:text="restart" />
+
+    <Button
+        android:id="@+id/pointB"
+        style="@style/Text1Theme"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/PlayerBName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="addTOneForPlayerB"
+        android:text="+"
+        android:textSize="45sp" />
+
+    <Button
+        android:id="@+id/pointA"
+        style="@style/Text1Theme"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/PlayerAName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#FFC107"
+        android:onClick="addTOneForPlayerA"
+        android:text="+"
+        android:textColor="#000000"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/SeparatorLeft"
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pointA"
+        android:background="#000000"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/SeparatorRight"
+        android:layout_width="100dp"
+        android:layout_height="3dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pointB"
+        android:background="#000000"
+        android:text="" />
+</RelativeLayout>
