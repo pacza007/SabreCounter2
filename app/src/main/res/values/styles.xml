@@ -10,29 +10,29 @@
 
     <style name="Text1Theme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="android:textColor">#FFF3E0</item>
+        <item name="android:textColor">@color/PlayerBTextcolor</item>
         <item name="android:fontFamily">monospace</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:background">#E65100</item>
-        <item name="android:padding">12dp</item>
+        <item name="android:background">@color/ScoreOrange</item>
+        <item name="android:padding">@dimen/Text1ThemePadding</item>
     </style>
 
     <style name="Text2Theme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
          <item name="android:fontFamily">monospace</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textSize">45sp</item>
-        <item name="android:layout_margin">8dp</item>
-        <item name="android:padding">8dp</item>
+        <item name="android:textSize">@dimen/textSize2</item>
+        <item name="android:layout_margin">@dimen/Text2ThemeLayout_margin</item>
+        <item name="android:padding">@dimen/Text2ThemePadding</item>
 
     </style>
 
     <style name="Button1Theme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="android:textColor">#FFF3E0</item>
+        <item name="android:textColor">@color/PlayerBTextcolor</item>
         <item name="android:fontFamily">monospace</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:background">#F44336</item>
+        <item name="android:background">@color/PlayerBOrange</item>
 
     </style>
 
